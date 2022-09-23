@@ -28,7 +28,7 @@ io.on('connection', socket=>{
 
 })
 
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT || 4000
 
 server.listen(PORT, ()=>{
     console.log("server runing")
